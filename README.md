@@ -2,7 +2,18 @@
 
 **AI 产品设计总控 Skill** — 一个 Router：识别你在做 UI/UX 设计，然后自动编排工作流并路由到对应专家 Skill，最后用 **100 分 Design Audit + Anti-AI Slop 门禁**收口交付。
 
-[官网（GitHub Pages）](https://linux503.github.io/premium-ui-design-docs/) · [仓库](https://github.com/linux503/premium-ui-design-docs)
+[进入官网](https://linux503.github.io/premium-ui-design-docs/) · [查看仓库](https://github.com/linux503/premium-ui-design-docs/)
+
+> 官网入口：<https://linux503.github.io/premium-ui-design-docs/>
+
+---
+
+## 你会得到什么
+
+- 一个 **总控设计 Skill**：不是单纯美化 UI，而是先识别任务，再路由到正确工作流
+- 一套 **专业设计流程**：Design Intelligence → Art Direction → Implementation → Design Audit
+- 一组 **外部专家 Skill 编排能力**：Web、iOS、SwiftUI、Dashboard、Landing Page 都能按场景调用
+- 一个 **可直接访问的官网**：用于展示定位、安装方式、案例提示词与使用方法
 
 ---
 
@@ -13,6 +24,22 @@
 > 这个页面有点普通，优化一下。
 
 它会先做 Design Intelligence + Art Direction，再选择 `NEW / REDESIGN / AUDIT / FIX / MATCH` 工作流，并给出可执行的实现与审查清单。
+
+---
+
+## 先看官网
+
+如果你想先看展示效果、再决定怎么装怎么用，直接打开：
+
+- [premium-ui-design 官网](https://linux503.github.io/premium-ui-design-docs/)
+
+官网里已经包含：
+
+- 产品定位
+- Web / iOS 安装命令
+- Cursor 用法示例
+- 专业案例提示词
+- 总控 Router 思路
 
 ---
 
@@ -41,6 +68,16 @@ npx skills add connerkward/ckw-design-skill
 npx skills add wholiver/swiftui-design-skill
 npx skills add dickwu/apple-design-skill
 ```
+
+---
+
+## 适合什么场景
+
+- 想让 Cursor 不只是“写组件”，而是先做设计判断
+- 想优化官网、Landing Page、Dashboard、后台系统
+- 想做更像 Apple 风格的 SwiftUI / iOS 页面
+- 想让 AI 输出少一点模板感，多一点审美控制
+- 想在交付前增加一层 Design Audit + Anti-AI Slop 门禁
 
 ---
 
@@ -137,3 +174,12 @@ npx skills add dickwu/apple-design-skill
 | [`premium-ui-design/prompts/cursor.md`](./premium-ui-design/prompts/cursor.md) | 可复制 Cursor 指令模板 |
 
 完整表格见 [`skill-registry.md`](./premium-ui-design/references/skill-registry.md)。
+
+---
+
+## 推荐阅读顺序
+
+1. 先看 [官网](https://linux503.github.io/premium-ui-design-docs/)
+2. 再看 [`INSTALL.md`](./INSTALL.md)
+3. 然后读 [`premium-ui-design/SKILL.md`](./premium-ui-design/SKILL.md)
+4. 最后按需复制上面的案例提示词到 Cursor
