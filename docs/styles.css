@@ -301,6 +301,30 @@ body{
   line-height:1.7;
 }
 
+.section-architecture{
+  border-top:1px solid rgba(255,255,255,.06);
+}
+.arch-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+.arch-block{
+  padding:18px 0 0;
+  border-top:1px solid var(--line-strong);
+}
+.arch-title{
+  font-size:19px;
+  font-weight:850;
+}
+.arch-body{
+  margin-top:8px;
+  color:var(--muted);
+  line-height:1.68;
+  font-size:14px;
+  max-width:42ch;
+}
+
 .install-shell{
   max-width:780px;
 }
@@ -465,6 +489,7 @@ body{
   .split-head,
   .flowline,
   .platform-layout,
+  .arch-grid,
   .audit-grid,
   .grid-2{
     grid-template-columns:1fr;
