@@ -23,55 +23,51 @@ premium-ui-design 识别：NEW / REDESIGN / AUDIT / FIX / MATCH
 
 ---
 
-## 工作流 × 平台 路由表
+## 平台自动判断链路（按你指定的链）
+
+`premium-ui-design` 在完成工作流判定后，会按平台走固定链路（用于指导“该怎么设计/怎么审查”），最后统一跑 `Design Audit`。
 
 ### Web
+Web
+→ Frontend Design
+→ UI UX Pro
+→ Responsive
+→ Typography
+→ Motion
 
-| 工作流 | 产品类型 | 主 Skill | 辅助 Skill |
-|---|---|---|---|
-| NEW | Landing Page / 官网 | `frontend-skill` | `frontend-design` |
-| NEW | SaaS / Dashboard | `frontend-design` | `ui-ux-pro-max` |
-| NEW | 需要强设计系统 | `claude-code-ui-ux-skill` | `ckw-design` |
-| REDESIGN | 任意 Web | `ckw-design` | `frontend-design` |
-| AUDIT | 任意 Web | `frontend-design-review` | `ux-designer-skill` |
-| FIX | 配色/字体/间距 | `claude-code-ui-ux-skill` | — |
-| FIX | 交互/表单/导航 | `ux-designer-skill` | — |
-| MATCH | 参考图复刻 | `frontend-skill` | `ckw-design` |
-
-### iOS / macOS（SwiftUI）
-
-| 工作流 | 场景 | 主 Skill | 辅助 Skill |
-|---|---|---|---|
-| NEW | 新 App / 新页面 | `swiftui-design-skill` | `ios-swiftui-design-language` |
-| NEW | 需要 Design System | `ios-swiftui-design-language` | `swiftui-design-tokens` |
-| NEW | iOS 26+ / Liquid Glass | `liquid-glass-skill` | `apple-design-skill` |
-| REDESIGN | 已有 SwiftUI UI | `swiftui-design-skill` | `apple-design-skill` |
-| AUDIT | 审查现有 App | `ios-design-agent-skill` | `apple-design-skill` |
-| FIX | Token 不统一 | `swiftui-design-tokens` | — |
-| FIX | HIG 合规 | `apple-design-skill` | — |
+### iOS / macOS
+iOS / macOS
+→ Apple HIG
+→ SwiftUI Design
+→ Anti AI-Slop
+→ Liquid Glass
+→ SF Symbols
+→ Native Components
 
 ### Android
+Android
+→ Material 3
+→ Jetpack Compose
+→ Android Navigation
 
-| 工作流 | 主 Skill | 辅助 Skill |
-|---|---|---|
-| NEW / REDESIGN | `mobile-app-design` | `ui-ux-pro-max`（stack: jetpack-compose） |
-| AUDIT | `mobile-ui-ux-designer` | `ux-designer-skill` |
+### Flutter / React Native
+Flutter / React Native
+→ Mobile UI
+→ iOS / Android 平台差异
+→ Adaptive Design
 
-### Flutter / React Native（跨平台）
+### 最终统一审查（Design Audit：10 维度）
+设计交付前，必须用下面 10 个维度统一审查（顺序固定）：
+视觉层级 → 字体 → 配色 → 间距 → 圆角 → 图标 → 组件 → 动效 → 响应式 → AI模板味
 
-| 工作流 | 主 Skill | 辅助 Skill |
-|---|---|---|
-| NEW / REDESIGN | `mobile-app-ui-design` | `mobile-app-design` |
-| 全流程 UX | `mobile-ui-ux-designer` | `ui-ux-pro-max` |
-| AUDIT | `mobile-app-design` | `ux-designer-skill` |
+每项 `0~10`，汇总为总分 `100`，并执行 Gate：
+- `90–100`：可以交付
+- `80–89`：自动优化明显问题
+- `70–79`：必须重新 Review + 修改
+- `<70`：Art Direction 或 Layout 有问题 → 重新设计
 
-### 不确定平台 / 综合任务
-
-| 场景 | 主 Skill |
-|---|---|
-| 从零选风格 + 配色 + 字体 | `ui-ux-pro-max` |
-| 大型知识库检索 | `claude-code-ui-ux-skill` |
-| 提高品味、避免模板感 | `ckw-design` |
+特殊门禁：
+> 即使总分 > 90，只要 **AI模板味** 严重命中，也不能完成。
 
 ---
 

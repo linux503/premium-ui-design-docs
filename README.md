@@ -27,6 +27,43 @@
 
 ---
 
+## 自动路由规则（关键词触发 + 固定链路 + 统一 10 维度审查）
+
+当 Cursor 遇到下面关键词时，自动调用本总控设计 Skill（`premium-ui-design`）：
+`优化UI / redesign / 美化 / App设计 / 网站设计 / 官网设计 / SwiftUI / iOS / macOS / Android / Flutter / React Native / Landing Page / Dashboard`
+
+内部自动判断链路（固定顺序）：
+
+Web
+→ Frontend Design
+→ UI UX Pro（`ui-ux-pro-max`）
+→ Responsive
+→ Typography
+→ Motion
+
+iOS / macOS
+→ Apple HIG
+→ SwiftUI Design
+→ Anti AI-Slop
+→ Liquid Glass
+→ SF Symbols
+→ Native Components
+
+Android
+→ Material 3
+→ Jetpack Compose
+→ Android Navigation
+
+Flutter / React Native
+→ Mobile UI
+→ iOS / Android 平台差异
+→ Adaptive Design
+
+最后统一跑一个 Design Audit（固定顺序，10 维度）：
+视觉层级 → 字体 → 配色 → 间距 → 圆角 → 图标 → 组件 → 动效 → 响应式 → AI模板味
+
+---
+
 ## 先看官网
 
 如果你想先看展示效果、再决定怎么装怎么用，直接打开：

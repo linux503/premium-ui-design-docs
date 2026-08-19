@@ -1,20 +1,20 @@
-# Design Audit（100 分制 + Gate 门禁）
+# Design Audit（统一 10 维度 + Gate 门禁）
 
-设计输出不能直接 `Done`。必须基于量化 rubric 审查并执行门禁。
+设计输出不能直接 `Done`。必须基于你指定的 10 维度 rubric 审查并执行门禁。
 
-## 评分表（总分 100）
-- Visual Hierarchy：15
-- Layout & Spacing：10
-- Typography：10
-- Color：10
-- UX Clarity：15
-- Platform Native：10
-- Consistency：10
-- Accessibility：5
-- Responsive / Adaptive：5
-- Brand Personality：5
-- Anti-AI Slop：5
-- （可选）Implementation clarity：0~5（当实现细节也是交付范围时）
+## 统一审查维度（总分 100）
+每个维度打分 `0~10`，按顺序给出解释与修改建议，最终汇总为总分 100：
+
+1. 视觉层级
+2. 字体
+3. 配色
+4. 间距
+5. 圆角
+6. 图标
+7. 组件
+8. 动效
+9. 响应式
+10. AI模板味
 
 ## Gate 规则
 - `90–100`：可以交付
@@ -23,9 +23,10 @@
 - `<70`：Art Direction 或 Layout 有问题 → 重新设计
 
 特殊门禁：
-> 即使总分 > 90，只要 Anti-AI Slop 严重命中，也不能完成。
+> 即使总分 > 90，只要 **AI模板味** 命中严重（模板化/无设计理由的 AI 脏模式），也不能完成。
 
 ## 必须输出的审查结果结构
+- 10 维度评分表（每项：分数 + 一句话证据 + 建议）
 - Top issues（必改项，按影响排序）
 - Next changes（可选优化项）
 - Risk notes（如果不改会怎样）

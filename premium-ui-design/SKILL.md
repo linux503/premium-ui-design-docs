@@ -1,7 +1,8 @@
 ---
 name: premium-ui-design
 description: >
-  总控设计 Skill：识别 UI/UX/美化/重设计/页面不好看/高级感/苹果风/Landing/SaaS/Dashboard/SwiftUI/iOS/macOS/Android/Flutter/React Native 等意图后，
+  总控设计 Skill：当用户请求中出现以下关键词任意项时触发：
+  优化UI / redesign / 美化 / App设计 / 网站设计 / 官网设计 / SwiftUI / iOS / macOS / Android / Flutter / React Native / Landing Page / Dashboard
   自动路由到 NEW/REDESIGN/AUDIT/FIX/MATCH 工作流，并编排 16 个推荐外部设计 Skill（frontend-design、frontend-skill、ckw-design、swiftui-design-skill 等）。
   禁止直接写 UI；先 Design Intelligence + Art Direction，再实现，最后 100 分 Audit + Anti-AI Slop 门禁。
   仓库：https://github.com/linux503/premium-ui-design-docs
@@ -113,14 +114,27 @@ description: >
 `[premium-ui-design] 工作流 / 平台 / 主Skill / 辅助Skill / Art Direction 一句话`
 
 ### Step 3：识别平台与适配策略
-- Web：Responsive + Typography + Layout + Conversion UX + Motion + Accessibility
-- iOS：Apple HIG + SwiftUI + Native Navigation + SF Symbols + Dynamic Type + Haptics + Motion + Liquid Glass（适用时）
-  - 强制原则：**不要把 Web 搬进 iPhone**
-- macOS：Toolbar/Sidebar/Inspector/Menu Bar/Window/Sheet/Popover/Keyboard Shortcut/Context Menu/Drag & Drop/Multi-window
-  - 强制原则：**Mac App 应该像 Mac App，而不是放大的 iPhone**
-- Android：Material 3 + Jetpack Compose + Android Navigation + Adaptive Layout + Dynamic Color + Interaction
-  - 强制原则：**iOS ≠ Android**
-- Flutter / React Native：Cross-platform core + Platform adaptation（导航、Back、Sheet、Dialog、Picker、动效、排版、spacing 按平台调整）
+- Web
+→ Frontend Design
+→ UI UX Pro（`ui-ux-pro-max`）
+→ Responsive
+→ Typography
+→ Motion
+- iOS / macOS
+→ Apple HIG
+→ SwiftUI Design（`swiftui-design-skill`）
+→ Anti AI-Slop（Anti-AI Slop 门禁）
+→ Liquid Glass
+→ SF Symbols
+→ Native Components
+- Android
+→ Material 3
+→ Jetpack Compose
+→ Android Navigation
+- Flutter / React Native
+→ Mobile UI
+→ iOS / Android 平台差异
+→ Adaptive Design
 
 ---
 
@@ -266,19 +280,18 @@ Skill 必须确保视觉层级来自：
 
 ## Design Audit（100 分制 + Gate 门禁）
 
-交付前必须输出评分表（总分 100）：
-- Visual Hierarchy 15
-- Layout & Spacing 10
-- Typography 10
-- Color 10
-- UX Clarity 15
-- Platform Native 10
-- Consistency 10
-- Accessibility 5
-- Responsive / Adaptive 5
-- Brand Personality 5
-- Anti-AI Slop 5
-- （可选加项）Implementation clarity 0~5（若实现细节是输出目标）
+交付前必须输出统一审查维度评分表（总分 100）：
+每项打分 `0~10`，并按下面顺序给出证据与修改建议：
+1) 视觉层级
+2) 字体
+3) 配色
+4) 间距
+5) 圆角
+6) 图标
+7) 组件
+8) 动效
+9) 响应式
+10) AI模板味
 
 ### Gate 规则
 - `90–100`：可以交付
@@ -287,7 +300,7 @@ Skill 必须确保视觉层级来自：
 - `<70`：Art Direction 或 Layout 有问题 → 重新设计
 
 ### Anti-AI Slop 严重问题特判
-> 即使总分 >90，只要 Anti-AI Slop 出现严重问题，也不能完成。
+> 即使总分 >90，只要 **AI模板味** 严重（模板化/无设计理由的 AI 脏模式），也不能完成。
 
 ---
 
