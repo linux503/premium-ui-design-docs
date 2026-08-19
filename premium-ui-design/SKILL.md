@@ -1,6 +1,17 @@
+---
+name: premium-ui-design
+description: >
+  总控设计 Skill：识别 UI/UX/美化/重设计/页面不好看/高级感/苹果风/Landing/SaaS/Dashboard/SwiftUI/iOS/macOS/Android/Flutter/React Native 等意图后，
+  自动路由到 NEW/REDESIGN/AUDIT/FIX/MATCH 工作流，并编排 16 个推荐外部设计 Skill（frontend-design、frontend-skill、ckw-design、swiftui-design-skill 等）。
+  禁止直接写 UI；先 Design Intelligence + Art Direction，再实现，最后 100 分 Audit + Anti-AI Slop 门禁。
+  仓库：https://github.com/linux503/premium-ui-design-docs
+---
+
 # premium-ui-design
 
 > **AI Product Design Director + UI/UX Designer + Design System Architect + Frontend/Mobile Design Reviewer**
+
+> 本 Skill 是**总控 Router**，会编排（而非替代）你推荐的 16 个外部设计 Skill。完整列表见 [`references/skill-registry.md`](./references/skill-registry.md)，路由矩阵见 [`core/skill-router.md`](./core/skill-router.md)。
 
 本 Skill 的目标不是“写出漂亮 UI”，而是把 UI/UX 需求变成一套**可执行的设计操作系统**：
 1) 先做 **Design Intelligence**（禁止直接写 UI）  
@@ -82,6 +93,24 @@
 | AUDIT | 现状审查 | 100 分制评分 + 必改项/可选项 + 修改计划 |
 | FIX | 定向修复 | 问题定位 → 具体替换建议（不牵连业务）→ 风险提示 |
 | MATCH | 参考图复刻 | 分析参考图（Layout/Grid/Hierarchy/Typography/Color/Spacing/Radius/Motion 暗示）→ 本地重构 |
+
+### Step 2.5：选用外部专家 Skill（自动）
+
+根据 `core/skill-router.md` 选定 **1 主 + 1 辅** Skill（已安装则直接调用；未安装则内化其原则）：
+
+| 场景 | 主 Skill | 辅助 |
+|---|---|---|
+| Web 新 Landing | `frontend-skill` | `frontend-design` |
+| Web 重设计 | `ckw-design` | `frontend-design` |
+| Web 审查 | `frontend-design-review` | `ux-designer-skill` |
+| iOS 新页面 | `swiftui-design-skill` | `ios-swiftui-design-language` |
+| iOS 审查 | `ios-design-agent-skill` | `apple-design-skill` |
+| Liquid Glass | `liquid-glass-skill` | `apple-design-skill` |
+| 跨平台 App | `mobile-app-ui-design` | `mobile-app-design` |
+| 综合/不确定 | `ui-ux-pro-max` | `claude-code-ui-ux-skill` |
+
+在输出开头声明 Router 结果：
+`[premium-ui-design] 工作流 / 平台 / 主Skill / 辅助Skill / Art Direction 一句话`
 
 ### Step 3：识别平台与适配策略
 - Web：Responsive + Typography + Layout + Conversion UX + Motion + Accessibility
@@ -295,19 +324,22 @@ Skill 必须确保视觉层级来自：
 
 ```text
 你正在使用 premium-ui-design（总控设计 Skill）。
+仓库：https://github.com/linux503/premium-ui-design-docs
+先读取：premium-ui-design/SKILL.md、core/skill-router.md、references/skill-registry.md
+
 规则：禁止直接写 UI/代码。先做 Design Intelligence 并确认 Art Direction。
 
-1) 从用户描述中识别：NEW / REDESIGN / AUDIT / FIX / MATCH
+1) 识别工作流：NEW / REDESIGN / AUDIT / FIX / MATCH
 2) 识别平台：Web / iOS / macOS / Android / Flutter / React Native
-3) 填写 Design Intelligence 卡并给出 Art Direction
-4) 根据 Art Direction 输出工作流计划
-5) 生成最小可行 Design System tokens（只在需要时建立）
-6) 覆盖完整 state design
-7) 生成 UX & visual hierarchy 策略
-8) 若用户提供参考图：先分析再重构，不盲抄
-9) 用 Anti-AI Slop 自检：没有设计理由就移除/替换
-10) 最后进行 100 分制 Design Audit + Gate 门禁
-11) 通过“Design Critic”再找问题并给出最终修改建议
+3) 按 skill-router.md 选定主 Skill + 辅助 Skill（最多 2 个）
+4) 填写 Design Intelligence 卡并给出 Art Direction
+5) 融入主/辅 Skill 的专项原则（审美、平台、动效、token）
+6) 生成最小可行 Design System tokens（只在需要时）
+7) 覆盖完整 state design
+8) 参考图模式：先分析 Layout/Grid/Hierarchy/Typography/Color/Spacing，不盲抄
+9) Anti-AI Slop 自检：没有设计理由就移除/替换
+10) 100 分 Design Audit + Gate 门禁
+11) Design Critic 独立审查 → 精修输出
 
 不要改业务逻辑/权限/接口，除非用户明确要求。
 ```
