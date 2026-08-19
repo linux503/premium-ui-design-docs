@@ -27,68 +27,97 @@
 
     <main id="content">
       <section class="hero" aria-label="Hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <div class="eyebrow">AI Product Design Director · UI/UX · Design System · Design Review</div>
-            <h1 class="h1">让 Cursor 先识别“你在做设计”，再路由到对应专家流程。</h1>
-            <p class="lead">
-              premium-ui-design 是一个总控设计 Skill：禁止默认直接写 UI 代码，先做 Design Intelligence + Art
-              Direction，再执行 NEW/REDESIGN/AUDIT/FIX/MATCH 工作流，并用 100 分制审查做最后的
-              “不过关继续改”门禁。
-            </p>
+        <div class="container hero-shell">
+          <div class="eyebrow">AI Product Design Director · UI/UX · Design System · Design Review</div>
+          <h1 class="h1">不是再写一个 UI Prompt，而是给 Cursor 一套真正会判断审美的设计操作系统。</h1>
+          <p class="lead lead-wide">
+            `premium-ui-design` 会先识别你是在做新页面、重设计、审查还是定向修复，再决定平台、产品类型、
+            Art Direction 与专家 Skill 组合。重点不是“多做几个卡片”，而是让输出更像真正上线的产品。
+          </p>
 
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#quickstart">开始使用</a>
-              <a class="btn btn-ghost" href="#router">看 Router 思路</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quickstart">开始使用</a>
+            <a class="btn btn-ghost" href="#cases">看专业案例</a>
+            <a class="btn btn-ghost" href="https://github.com/linux503/premium-ui-design-docs">查看 GitHub</a>
+          </div>
+
+          <div class="hero-strip" aria-label="关键特性">
+            <div class="strip-item">
+              <div class="strip-k">01</div>
+              <div class="strip-v">先做 Design Intelligence，不直接写 UI</div>
             </div>
-
-            <div class="hero-meta" aria-label="功能要点">
-              <div class="meta-pill">Anti-AI Slop 门禁</div>
-              <div class="meta-pill">100 分 Design Audit + Gate</div>
-              <div class="meta-pill">不破坏业务逻辑</div>
+            <div class="strip-item">
+              <div class="strip-k">02</div>
+              <div class="strip-v">自动路由 NEW / REDESIGN / AUDIT / FIX / MATCH</div>
+            </div>
+            <div class="strip-item">
+              <div class="strip-k">03</div>
+              <div class="strip-v">100 分 Design Audit + Anti-AI Slop 门禁</div>
             </div>
           </div>
 
-          <div class="hero-card" aria-label="总控流程卡片">
-            <div class="card-title">总控执行链</div>
-            <ol class="flow" aria-label="执行流程">
-              <li><span class="flow-k">识别</span> 你在做 UI/UX 设计/优化</li>
-              <li><span class="flow-k">路由</span> NEW / REDESIGN / AUDIT / FIX / MATCH</li>
-              <li><span class="flow-k">决策</span> 平台 + 产品类型 + Art Direction</li>
-              <li><span class="flow-k">编排</span> 选 1 主 + 1 辅专家 Skill</li>
-              <li><span class="flow-k">交付</span> Audit 评分与迭代计划</li>
-            </ol>
-            <div class="card-foot">
-              <span class="card-foot-note">设计失败就继续改：</span>
-              <span class="card-foot-strong">Anti-AI Slop 一票否决（严重命中时）</span>
-            </div>
+          <div class="hero-note">
+            设计失败就继续改，而不是“Done”。
+            <strong>严重命中 Anti-AI Slop 时，一票否决。</strong>
           </div>
         </div>
       </section>
 
-      <section id="quickstart" class="section" aria-label="快速开始">
+      <section id="quickstart" class="section section-quickstart" aria-label="快速开始">
         <div class="container">
           <div class="section-head">
             <h2 class="h2">快速开始</h2>
             <p class="sub">
-              先装总控。然后在 Cursor 里直接用自然语言说“页面不好看/优化 UI/重新设计”，它会自动路由并给出可执行的设计与实现建议。
+              先装总控，再用自然语言描述问题。你不需要手动告诉它该走哪套设计流程，它会自己先判断。
             </p>
           </div>
 
-          <div class="grid-2">
-            <div class="panel">
-              <div class="panel-title">1) 安装总控 Skill（推荐：项目内）</div>
-              <pre class="code"><code>git clone https://github.com/linux503/premium-ui-design-docs.git .cursor/skills/premium-ui-design-docs</code></pre>
-              <div class="hint">重启 Cursor 后即可触发。</div>
-            </div>
-            <div class="panel panel-quiet">
-              <div class="panel-title">2) 你可以怎么说</div>
-              <div class="quote">
-                <div class="quote-line">“这个页面有点普通，优化一下。”</div>
-                <div class="quote-line">“帮我重设计这个 Landing Page，别 AI 模板感。”</div>
-                <div class="quote-line">“SwiftUI 设置页要苹果风，并做审查。”</div>
+          <div class="quickstart-layout">
+            <div class="quickstart-main">
+              <div class="panel panel-strong">
+                <div class="panel-label">Install</div>
+                <div class="panel-title panel-title-large">先把总控 Skill 装进 Cursor</div>
+                <pre class="code code-hero"><code>git clone https://github.com/linux503/premium-ui-design-docs.git .cursor/skills/premium-ui-design-docs</code></pre>
+                <div class="hint">推荐项目内安装。重启 Cursor 后即可自动触发。</div>
               </div>
-              <div class="hint">如果你只做审查：它也会走 AUDIT + 评分门禁。</div>
+            </div>
+
+            <div class="quickstart-side">
+              <div class="steps">
+                <div class="step">
+                  <div class="step-no">1</div>
+                  <div>
+                    <div class="step-title">说问题，而不是说组件</div>
+                    <div class="step-body">直接说“这个页面普通”“层级不清”“想要苹果风”，不要先限定实现。</div>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-no">2</div>
+                  <div>
+                    <div class="step-title">它先判断，再设计</div>
+                    <div class="step-body">先 Design Intelligence，再定平台、产品类型、Art Direction 和专家 Skill。</div>
+                  </div>
+                </div>
+                <div class="step">
+                  <div class="step-no">3</div>
+                  <div>
+                    <div class="step-title">最后审查，不满意继续迭代</div>
+                    <div class="step-body">默认执行 100 分 Audit，并用 Anti-AI Slop 检查模板感。</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="prompt-band">
+            <div class="prompt-band-head">
+              <div class="panel-label">Prompt Examples</div>
+              <div class="panel-title">你可以直接这样对 Cursor 说</div>
+            </div>
+            <div class="prompt-grid">
+              <div class="prompt-item">“这个页面有点普通，优化一下。”</div>
+              <div class="prompt-item">“帮我重设计这个 Landing Page，别 AI 模板感。”</div>
+              <div class="prompt-item">“SwiftUI 设置页要苹果风，并做审查。”</div>
             </div>
           </div>
         </div>
