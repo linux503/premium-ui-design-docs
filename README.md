@@ -54,6 +54,79 @@ npx skills add dickwu/apple-design-skill
 
 ---
 
+## 专业案例提示词（可直接复制）
+
+### 案例 1（Web NEW｜SaaS Landing Page）
+
+```text
+使用 premium-ui-design 总控设计 Skill。
+
+任务类型：NEW
+平台：Web
+产品类型：SaaS Landing Page（AI 产品）
+
+目标：首屏 5 秒内让用户理解“我们做什么 + 为什么可信 + 下一步怎么做”（并明确 CTA）。
+
+要求：
+1) 先输出 Design Intelligence 卡（Product / Audience / Core task / density / visual focus / avoid）
+2) 再输出 Art Direction（一句话 + 主视觉理念 + typography/layout/motion 策略 + 3 条 avoid）
+3) 输出一页可落地结构：Hero + Proof（数字/引用）+ Features（分层）+ Pricing teaser + FAQ + Footer
+4) 覆盖完整 state/交互：默认、hover、disabled、loading、empty/error（表单/弹窗为准）
+5) Anti-AI Slop 自检：任何“模板化脏模式”必须说明设计理由；严重命中则直接移除
+6) 最后给出 100 分 Design Audit + Gate + 下一轮迭代计划
+7) 工程实现建议：组件拆分、token 最小集、哪些不该动（禁止改业务逻辑）
+```
+
+### 案例 2（Web REDESIGN｜Dashboard 信息层级重构）
+
+```text
+使用 premium-ui-design 总控设计 Skill。
+
+任务类型：REDESIGN
+平台：Web
+产品类型：Dashboard（后台管理风格）
+
+上下文：
+- 我会给你当前页面截图/代码片段
+- 直觉问题：信息层级不清、模块同构模板感、表格/筛选交互状态不完整
+
+强制规则：
+1) 禁止大改业务逻辑/数据结构/权限接口；只改 UI 结构、层级、组件状态与交互
+2) 必须先做 AUDIT：给出必改项/可选项（按影响排序）再进入 REDESIGN
+3) Anti-AI Slop：任何“圆角卡片堆叠/同构模板/无意义渐变/不可读文案淡色”需要一票否决或给出理由
+4) 输出：新信息架构 + 关键组件 state 表（Filters、Table、Empty/Error、Loading skeleton）
+5) 最后输出 100 分 Audit + Gate + 最小改动清单（Next changes）
+```
+
+### 案例 3（iOS AUDIT+FIX｜SwiftUI Settings 苹果风）
+
+```text
+使用 premium-ui-design 总控设计 Skill。
+
+任务类型：AUDIT 然后 FIX
+平台：iOS
+框架：SwiftUI
+场景：Settings 页面（包含表单、开关、选择器、以及危险操作）
+
+输入：我会贴 Settings 的 SwiftUI 视图代码（或截图）
+
+审查目标（必须覆盖）：
+- Apple HIG 气质是否原生（不要把 Web/模板感搬进 iPhone）
+- 第一眼/第二眼/下一步路径是否清晰（Primary attention / Secondary attention / Primary action path）
+- 完整交互 state：Default、Focused、Disabled、Loading、Empty、Error
+- 可访问性落地：Dynamic Type、VoiceOver 语义（至少说明 label/traits/可访问顺序）
+- Motion：Level 1 + 少量 Level 2（默认禁用无意义夸张动效）
+
+输出：
+1) Design Intelligence 卡（缺什么先追问）
+2) Art Direction（苹果风 + 不做什么）
+3) 100 分 Design Audit + Anti-AI Slop 门禁
+4) FIX：逐条给“具体替换建议”（哪些 Section/控件怎么改、按钮文案怎么改、间距怎么改）
+5) 工程实现建议：token 最小集、组件拆分方案、哪些不该动
+```
+
+---
+
 ## 核心入口文件
 
 | 文件 | 作用 |
