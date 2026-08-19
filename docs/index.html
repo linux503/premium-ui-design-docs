@@ -189,28 +189,47 @@
         <div class="container">
           <div class="section-head section-head-wide">
             <div class="section-kicker">Skill architecture</div>
-            <h2 class="h2">它不是一句 Prompt，而是一个被拆开的设计系统脑。</h2>
+            <h2 class="h2">它不是一句 Prompt，而是一套被拆开的、可维护的设计操作系统。</h2>
             <p class="sub">
-              参考全网 Skill 的方法论后，最终落到一个可维护的结构里：入口、Router、审查标准、案例提示词、以及平台判断逻辑各自独立。
+              参考全网 Skill 的方法论后，最终落到一个可维护的结构里：入口、Router、审查标准、案例提示词、
+              以及平台判断逻辑彼此独立，但又被总控统一调度。
             </p>
           </div>
 
-          <div class="arch-grid">
-            <div class="arch-block">
-              <div class="arch-title">SKILL.md</div>
-              <div class="arch-body">主入口。负责触发词、工作流、平台判断、核心纪律与最终执行原则。</div>
+          <div class="arch-shell">
+            <div class="arch-tree">
+              <div class="arch-tree-head">premium-ui-design/</div>
+              <pre class="arch-code"><code>premium-ui-design/
+├── SKILL.md
+├── core/
+│   └── skill-router.md
+├── docs/
+│   ├── design-intelligence.md
+│   ├── anti-ai-slop.md
+│   └── design-audit.md
+├── references/
+│   └── skill-registry.md
+└── prompts/
+    └── cursor.md</code></pre>
             </div>
-            <div class="arch-block">
-              <div class="arch-title">core/skill-router.md</div>
-              <div class="arch-body">把 Web、iOS / macOS、Android、Flutter / React Native 的链路固定下来。</div>
-            </div>
-            <div class="arch-block">
-              <div class="arch-title">docs/design-audit.md</div>
-              <div class="arch-body">统一 10 维 Design Audit，确保最后不是“好像差不多”就结束。</div>
-            </div>
-            <div class="arch-block">
-              <div class="arch-title">references/skill-registry.md</div>
-              <div class="arch-body">外部专家 Skill 来源清单。不是堆砌，而是按需吸收。</div>
+
+            <div class="arch-grid">
+              <div class="arch-block">
+                <div class="arch-title">SKILL.md</div>
+                <div class="arch-body">主入口。负责触发词、工作流、平台判断、核心纪律与最终执行原则。</div>
+              </div>
+              <div class="arch-block">
+                <div class="arch-title">core/skill-router.md</div>
+                <div class="arch-body">把 Web、iOS / macOS、Android、Flutter / React Native 的链路固定下来。</div>
+              </div>
+              <div class="arch-block">
+                <div class="arch-title">docs/design-audit.md</div>
+                <div class="arch-body">统一 10 维 Design Audit，确保最后不是“好像差不多”就结束。</div>
+              </div>
+              <div class="arch-block">
+                <div class="arch-title">references/skill-registry.md</div>
+                <div class="arch-body">外部专家 Skill 来源清单。不是堆砌，而是按需吸收。</div>
+              </div>
             </div>
           </div>
         </div>
