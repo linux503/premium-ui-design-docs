@@ -152,6 +152,83 @@ npx skills add dickwu/apple-design-skill</code></pre>
         </div>
       </section>
 
+      <section id="cases" class="section" aria-label="专业案例提示词（可复制）">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2">专业 Cursor 案例（可复制）</h2>
+            <p class="sub">从一句“页面普通/不够苹果风”开始，让总控先冻结输入，再路由到正确专家流程。</p>
+          </div>
+
+          <div class="case-grid">
+            <details class="case" open>
+              <summary class="case-summary">案例 1：Web NEW｜SaaS Landing Page</summary>
+              <pre class="code"><code>使用 premium-ui-design 总控设计 Skill。
+
+任务类型：NEW
+平台：Web
+产品类型：SaaS Landing Page（AI 产品）
+
+目标：首屏 5 秒内让用户理解“我们做什么 + 为什么可信 + 下一步怎么做”（并明确 CTA）。
+
+要求：
+1) 先输出 Design Intelligence 卡（Product / Audience / Core task / density / visual focus / avoid）
+2) 再输出 Art Direction（主视觉理念 + typography/layout/motion 策略 + 3 条 avoid）
+3) 输出一页可落地结构：Hero + Proof + Features + Pricing teaser + FAQ + Footer
+4) 覆盖默认/hover/disabled/loading/empty/error（以按钮/表单/弹窗为准）
+5) Anti-AI Slop 自检：没有设计理由就移除（严重命中则直接否决）
+6) 最后给出 100 分 Design Audit + Gate + 下一轮迭代计划
+7) 工程建议：组件拆分、token 最小集、哪些不该动（禁止改业务逻辑）</code></pre>
+            </details>
+
+            <details class="case">
+              <summary class="case-summary">案例 2：Web REDESIGN｜Dashboard 信息层级重构</summary>
+              <pre class="code"><code>使用 premium-ui-design 总控设计 Skill。
+
+任务类型：REDESIGN
+平台：Web
+产品类型：Dashboard（后台管理风格）
+
+上下文：
+- 我会给你当前页面截图/代码片段
+- 直觉问题：信息层级不清、模块同构模板感、表格/筛选交互状态不完整
+
+强制规则：
+1) 禁止大改业务逻辑/数据结构/权限接口；只改 UI 结构、层级、组件状态与交互
+2) 必须先做 AUDIT：给出必改项/可选项（按影响排序）再进入 REDESIGN
+3) Anti-AI Slop：任何“圆角卡片堆叠/同构模板/无意义渐变/不可读淡色文案”需要否决或给出理由
+4) 输出新信息架构 + 关键组件 state 表（Filters、Table、Empty/Error、Loading skeleton）
+5) 最后输出 100 分 Audit + Gate + 最小改动清单（Next changes）</code></pre>
+            </details>
+
+            <details class="case">
+              <summary class="case-summary">案例 3：iOS AUDIT+FIX｜SwiftUI Settings 苹果风</summary>
+              <pre class="code"><code>使用 premium-ui-design 总控设计 Skill。
+
+任务类型：AUDIT 然后 FIX
+平台：iOS
+框架：SwiftUI
+场景：Settings 页面（表单、开关、选择器、危险操作）
+
+输入：我会贴 Settings 的 SwiftUI 视图代码（或截图）
+
+审查目标（必须覆盖）：
+- Apple HIG 气质是否原生（不要把 Web/模板感搬进 iPhone）
+- 第一眼/第二眼/下一步路径是否清晰（Primary attention / Secondary attention / Primary action path）
+- 完整交互 state：Default、Focused、Disabled、Loading、Empty、Error
+- 可访问性落地：Dynamic Type、VoiceOver 语义（说明 label/traits/可访问顺序）
+- Motion：Level 1 + 少量 Level 2（默认禁用无意义夸张动效）
+
+输出：
+1) Design Intelligence 卡（缺什么先追问）
+2) Art Direction（苹果风 + 不做什么）
+3) 100 分 Design Audit + Anti-AI Slop 门禁
+4) FIX：逐条给具体替换建议（哪些 Section/控件怎么改、按钮文案怎么改、间距怎么改）
+5) 工程实现建议：token 最小集、组件拆分、哪些不该动</code></pre>
+            </details>
+          </div>
+        </div>
+      </section>
+
       <section id="router" class="section section-alt" aria-label="总控 Router">
         <div class="container">
           <div class="section-head section-head-compact">

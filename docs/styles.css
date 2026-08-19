@@ -4,8 +4,8 @@
   --card:#0f172a;
   --text:#e5e7eb;
   --muted:#a3a3a3;
-  --line:rgba(255,255,255,.10);
-  --shadow: 0 14px 40px rgba(0,0,0,.35);
+  --line:rgba(255,255,255,.12);
+  --shadow: 0 10px 28px rgba(0,0,0,.22);
   --accent:#7c3aed;
   --accent2:#10b981;
   --radius:16px;
@@ -177,9 +177,9 @@ body{
 
 .hero-card{
   border-radius: var(--radius);
-  background: rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.10);
-  box-shadow: var(--shadow);
+  background: rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow: none;
   padding:18px 18px 16px;
   position:relative;
   overflow:hidden;
@@ -210,8 +210,8 @@ body{
 }
 .flow li{
   padding:10px 12px;
-  border:1px solid rgba(255,255,255,.08);
-  background: rgba(0,0,0,.12);
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.08);
   border-radius:14px;
   font-size:14px;
   color:rgba(255,255,255,.85);
@@ -264,12 +264,12 @@ body{
 .panel{
   border-radius: var(--radius);
   border:1px solid rgba(255,255,255,.10);
-  background: rgba(255,255,255,.04);
+  background: rgba(255,255,255,.025);
   padding:18px;
-  box-shadow: 0 18px 60px rgba(0,0,0,.22);
+  box-shadow: none;
 }
 .panel-quiet{
-  background: rgba(255,255,255,.03);
+  background: rgba(255,255,255,.02);
 }
 .panel-title{
   font-weight:850;
@@ -290,7 +290,7 @@ body{
 .quote-line{
   padding:10px 12px;
   border:1px solid rgba(255,255,255,.08);
-  background: rgba(0,0,0,.12);
+  background: rgba(0,0,0,.08);
   border-radius:14px;
 }
 .quote-line + .quote-line{ margin-top:10px; }
@@ -338,7 +338,7 @@ pre.code{
 .list li{
   padding:12px 12px;
   border:1px solid rgba(255,255,255,.08);
-  background: rgba(0,0,0,.12);
+  background: rgba(0,0,0,.08);
   border-radius:14px;
   color:rgba(255,255,255,.86);
   font-size:14px;
@@ -360,7 +360,7 @@ pre.code{
   align-items:start;
   border-radius: var(--radius);
   border:1px solid rgba(255,255,255,.10);
-  background: rgba(255,255,255,.03);
+  background: rgba(255,255,255,.02);
   padding:18px;
 }
 .matrix-title{
@@ -471,6 +471,39 @@ pre.code{
   font-size:13px;
 }
 .footer-link:hover{ box-shadow: var(--ring); }
+
+/* Case prompts */
+.case-grid{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.case{
+  border-radius: var(--radius);
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.02);
+  overflow:hidden;
+}
+.case-summary{
+  list-style:none;
+  cursor:pointer;
+  padding:14px 16px;
+  font-weight:900;
+  color:rgba(255,255,255,.92);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.case-summary::-webkit-details-marker{ display:none; }
+.case[open] .case-summary{
+  border-bottom-color: rgba(124,58,237,.25);
+}
+.case pre.code{
+  border-radius: 0;
+  border-left:0;
+  border-right:0;
+  border-bottom:0;
+  margin:0;
+  background: rgba(0,0,0,.22);
+}
 
 /* Responsive */
 @media (max-width: 920px){
