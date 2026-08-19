@@ -17,96 +17,190 @@
         </div>
 
         <nav class="nav" aria-label="页面导航">
-          <a class="nav-link" href="#quickstart">快速开始</a>
-          <a class="nav-link" href="#web">Web</a>
-          <a class="nav-link" href="#ios">iOS</a>
-          <a class="nav-link nav-link-muted" href="#router">总控 Router</a>
+          <a class="nav-link" href="#why">为什么存在</a>
+          <a class="nav-link" href="#flow">流程</a>
+          <a class="nav-link" href="#platforms">平台</a>
+          <a class="nav-link nav-link-muted" href="#quickstart">开始使用</a>
         </nav>
       </div>
     </header>
 
     <main id="content">
       <section class="hero" aria-label="Hero">
-        <div class="container hero-shell">
-          <div class="eyebrow">AI Product Design Director · UI/UX · Design System · Design Review</div>
-          <h1 class="h1">不是再写一个 UI Prompt，而是给 Cursor 一套真正会判断审美的设计操作系统。</h1>
-          <p class="lead lead-wide">
-            `premium-ui-design` 会先识别你是在做新页面、重设计、审查还是定向修复，再决定平台、产品类型、
-            Art Direction 与专家 Skill 组合。重点不是“多做几个卡片”，而是让输出更像真正上线的产品。
-          </p>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">AI Product Design Director · UI/UX · Design System · Design Review</div>
+            <h1 class="h1">让 Cursor 遇到设计任务时，不再“随手拼 UI”，而是先做判断，再做审美。</h1>
+            <p class="lead">
+              `premium-ui-design` 不是十几个 Skill 的目录页，而是一个总控 Router。它识别关键词、判断平台、
+              吸收全网设计 Skill 的方法论，然后按固定流程做出不模板化、真正适合当前产品的结果。
+            </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#quickstart">开始使用</a>
-            <a class="btn btn-ghost" href="#cases">看专业案例</a>
-            <a class="btn btn-ghost" href="https://github.com/linux503/premium-ui-design-docs">查看 GitHub</a>
-          </div>
-
-          <div class="hero-strip" aria-label="关键特性">
-            <div class="strip-item">
-              <div class="strip-k">01</div>
-              <div class="strip-v">先做 Design Intelligence，不直接写 UI</div>
-            </div>
-            <div class="strip-item">
-              <div class="strip-k">02</div>
-              <div class="strip-v">自动路由 NEW / REDESIGN / AUDIT / FIX / MATCH</div>
-            </div>
-            <div class="strip-item">
-              <div class="strip-k">03</div>
-              <div class="strip-v">100 分 Design Audit + Anti-AI Slop 门禁</div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#quickstart">开始使用</a>
+              <a class="btn btn-ghost" href="#cases">看案例提示词</a>
+              <a class="btn btn-ghost" href="https://github.com/linux503/premium-ui-design-docs">查看 GitHub</a>
             </div>
           </div>
 
-          <div class="hero-note">
-            设计失败就继续改，而不是“Done”。
-            <strong>严重命中 Anti-AI Slop 时，一票否决。</strong>
+          <div class="hero-aside">
+            <div class="hero-aside-title">流程统一，但结果不能同质化。</div>
+            <ul class="hero-principles">
+              <li>先 Design Intelligence，不直接写 UI</li>
+              <li>按平台走固定判断链路，而不是一套风格到处复用</li>
+              <li>最后统一跑 10 维 Design Audit，并审查 AI 模板味</li>
+            </ul>
+            <div class="hero-caption">你要的不是“更漂亮一点”，而是更像真正上线的产品。</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="section section-tight" aria-label="为什么存在">
+        <div class="container">
+          <div class="split-head">
+            <div class="split-kicker">Why this exists</div>
+            <div class="split-copy">
+              <h2 class="h2">大多数 AI 做 UI 的问题，不是不会写代码，而是根本没先做设计判断。</h2>
+              <p class="sub">
+                所以这个 Skill 的目标不是“多产出几个页面”，而是把设计流程标准化：识别任务、判断平台、
+                冻结输入、建立 Art Direction、执行平台逻辑、最后统一审查。这样输出才不会一眼就是模板。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="flow" class="section" aria-label="流程">
+        <div class="container">
+          <div class="section-head section-head-wide">
+            <div class="section-kicker">Standardized flow</div>
+            <h2 class="h2">固定流程，不固定结果。</h2>
+            <p class="sub">
+              每次都按同一套流程执行，但最终视觉必须随着产品类型、品牌气质、平台约束与信息密度发生变化。
+            </p>
+          </div>
+
+          <div class="flowline">
+            <div class="flow-step">
+              <div class="flow-index">01</div>
+              <div class="flow-title">Trigger</div>
+              <div class="flow-body">遇到 `优化UI / redesign / 美化 / SwiftUI / iOS / Landing Page / Dashboard` 等关键词自动触发。</div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-index">02</div>
+              <div class="flow-title">Judge</div>
+              <div class="flow-body">判断是 NEW / REDESIGN / AUDIT / FIX / MATCH，并锁定平台与产品类型。</div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-index">03</div>
+              <div class="flow-title">Direct</div>
+              <div class="flow-body">先写 Design Intelligence 与 Art Direction，不允许直接上 UI 代码。</div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-index">04</div>
+              <div class="flow-title">Build</div>
+              <div class="flow-body">按平台链路吸收外部 Skill 方法论，构建设计系统、组件与状态。</div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-index">05</div>
+              <div class="flow-title">Audit</div>
+              <div class="flow-body">统一跑 10 维 Design Audit，严重 AI 模板味一票否决。</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="platforms" class="section section-platforms" aria-label="平台 intelligence">
+        <div class="container">
+          <div class="section-head section-head-wide">
+            <div class="section-kicker">Platform intelligence</div>
+            <h2 class="h2">不同平台，走不同判断链路。</h2>
+          </div>
+
+          <div class="platform-layout">
+            <div class="platform-block">
+              <div class="platform-label">Web</div>
+              <div class="platform-chain">
+                <span>Frontend Design</span>
+                <span>UI UX Pro</span>
+                <span>Responsive</span>
+                <span>Typography</span>
+                <span>Motion</span>
+              </div>
+            </div>
+            <div class="platform-block">
+              <div class="platform-label">iOS / macOS</div>
+              <div class="platform-chain">
+                <span>Apple HIG</span>
+                <span>SwiftUI Design</span>
+                <span>Anti AI-Slop</span>
+                <span>Liquid Glass</span>
+                <span>SF Symbols</span>
+                <span>Native Components</span>
+              </div>
+            </div>
+            <div class="platform-block">
+              <div class="platform-label">Android</div>
+              <div class="platform-chain">
+                <span>Material 3</span>
+                <span>Jetpack Compose</span>
+                <span>Android Navigation</span>
+              </div>
+            </div>
+            <div class="platform-block">
+              <div class="platform-label">Flutter / React Native</div>
+              <div class="platform-chain">
+                <span>Mobile UI</span>
+                <span>iOS / Android 平台差异</span>
+                <span>Adaptive Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-audit" aria-label="Design Audit">
+        <div class="container">
+          <div class="section-head section-head-wide">
+            <div class="section-kicker">Unified review</div>
+            <h2 class="h2">最后不是直接 Done，而是统一跑 10 维 Design Audit。</h2>
+          </div>
+
+          <div class="audit-grid">
+            <div class="audit-item">视觉层级</div>
+            <div class="audit-item">字体</div>
+            <div class="audit-item">配色</div>
+            <div class="audit-item">间距</div>
+            <div class="audit-item">圆角</div>
+            <div class="audit-item">图标</div>
+            <div class="audit-item">组件</div>
+            <div class="audit-item">动效</div>
+            <div class="audit-item">响应式</div>
+            <div class="audit-item audit-item-warn">AI模板味</div>
+          </div>
+
+          <div class="audit-note">
+            分数高不等于可以结束。只要 <strong>AI模板味</strong> 严重命中，就必须继续优化。
           </div>
         </div>
       </section>
 
       <section id="quickstart" class="section section-quickstart" aria-label="快速开始">
         <div class="container">
-          <div class="section-head">
-            <h2 class="h2">快速开始</h2>
-            <p class="sub">
-              先装总控，再用自然语言描述问题。你不需要手动告诉它该走哪套设计流程，它会自己先判断。
-            </p>
+          <div class="split-head split-head-install">
+            <div class="split-kicker">Quickstart</div>
+            <div class="split-copy">
+              <h2 class="h2">先装进 Cursor，再用自然语言说问题。</h2>
+              <p class="sub">你不需要手动告诉它先走哪个 Skill。总控应该自己完成这件事。</p>
+            </div>
           </div>
 
-          <div class="quickstart-layout">
-            <div class="quickstart-main">
-              <div class="panel panel-strong">
-                <div class="panel-label">Install</div>
-                <div class="panel-title panel-title-large">先把总控 Skill 装进 Cursor</div>
-                <pre class="code code-hero"><code>git clone https://github.com/linux503/premium-ui-design-docs.git .cursor/skills/premium-ui-design-docs</code></pre>
-                <div class="hint">推荐项目内安装。重启 Cursor 后即可自动触发。</div>
-              </div>
+          <div class="install-shell">
+            <div class="install-command">
+              <div class="panel-label">Install</div>
+              <pre class="code code-hero"><code>git clone https://github.com/linux503/premium-ui-design-docs.git .cursor/skills/premium-ui-design-docs</code></pre>
             </div>
-
-            <div class="quickstart-side">
-              <div class="steps">
-                <div class="step">
-                  <div class="step-no">1</div>
-                  <div>
-                    <div class="step-title">说问题，而不是说组件</div>
-                    <div class="step-body">直接说“这个页面普通”“层级不清”“想要苹果风”，不要先限定实现。</div>
-                  </div>
-                </div>
-                <div class="step">
-                  <div class="step-no">2</div>
-                  <div>
-                    <div class="step-title">它先判断，再设计</div>
-                    <div class="step-body">先 Design Intelligence，再定平台、产品类型、Art Direction 和专家 Skill。</div>
-                  </div>
-                </div>
-                <div class="step">
-                  <div class="step-no">3</div>
-                  <div>
-                    <div class="step-title">最后审查，不满意继续迭代</div>
-                    <div class="step-body">默认执行 100 分 Audit，并用 Anti-AI Slop 检查模板感。</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="install-hint">推荐项目内安装。重启 Cursor 后即可自动触发。</div>
           </div>
 
           <div class="prompt-band">
@@ -114,7 +208,7 @@
               <div class="panel-label">Prompt Examples</div>
               <div class="panel-title">你可以直接这样对 Cursor 说</div>
             </div>
-            <div class="prompt-grid">
+            <div class="prompt-stack">
               <div class="prompt-item">“这个页面有点普通，优化一下。”</div>
               <div class="prompt-item">“帮我重设计这个 Landing Page，别 AI 模板感。”</div>
               <div class="prompt-item">“SwiftUI 设置页要苹果风，并做审查。”</div>
@@ -123,59 +217,25 @@
         </div>
       </section>
 
-      <section id="web" class="section" aria-label="Web 安装与用法">
+      <section id="web" class="section" aria-label="外部专家 Skill">
         <div class="container">
-          <div class="section-head">
-            <h2 class="h2">Web 专家 Skill（可选但强烈建议）</h2>
-            <p class="sub">
-              用于高审美的官网/产品页/视觉层级与动效约束。总控会在 Web 场景中优先编排它们。
-            </p>
+          <div class="split-head split-head-install">
+            <div class="split-kicker">Optional expert skills</div>
+            <div class="split-copy">
+              <h2 class="h2">外部 Skill 是专家来源，但最终应该被总控吸收，而不是各自为战。</h2>
+            </div>
           </div>
 
-          <div class="grid-2">
+          <div class="grid-2 grid-2-loose">
             <div class="panel">
-              <div class="panel-title">Web：Anthropic frontend-design + OpenAI frontend-skill</div>
+              <div class="panel-title">Web：Anthropic frontend-design + ckw-design</div>
               <pre class="code"><code>npx skills add https://github.com/anthropics/skills --skill frontend-design
 npx skills add connerkward/ckw-design-skill</code></pre>
-              <div class="hint">安装后，总控会把设计方向与反模板门禁嵌入你的输出。</div>
             </div>
-
-            <div class="panel panel-quiet">
-              <div class="panel-title">Web 用法示例</div>
-              <ul class="list">
-                <li><span class="list-k">NEW</span> “生成一个高级感的 SaaS Landing Page。”</li>
-                <li><span class="list-k">REDESIGN</span> “重做这个 Dashboard 的信息层级。”</li>
-                <li><span class="list-k">AUDIT</span> “审查现有页面哪里丑、哪里信息不清。”</li>
-              </ul>
-              <div class="hint">它会要求 Art Direction，并用 Anti-AI Slop 做审美门禁。</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="ios" class="section" aria-label="iOS 安装与用法">
-        <div class="container">
-          <div class="section-head">
-            <h2 class="h2">iOS 专家 Skill（可选）</h2>
-            <p class="sub">用于 SwiftUI 的苹果风审美、HIG 约束与 Liquid Glass 方向（按场景选择编排）。</p>
-          </div>
-
-          <div class="grid-2">
             <div class="panel">
-              <div class="panel-title">iOS：SwiftUI 视觉审美 + Apple HIG 复核</div>
+              <div class="panel-title">iOS：SwiftUI Design + Apple HIG</div>
               <pre class="code"><code>npx skills add wholiver/swiftui-design-skill
 npx skills add dickwu/apple-design-skill</code></pre>
-              <div class="hint">总控会在 iOS 工作流里优先把“平台原生”当作默认约束。</div>
-            </div>
-
-            <div class="panel panel-quiet">
-              <div class="panel-title">iOS 用法示例</div>
-              <ul class="list">
-                <li><span class="list-k">REDESIGN</span> “这个 SwiftUI 设置页不够苹果风，重排版。”</li>
-                <li><span class="list-k">FIX</span> “审查按钮与表单状态设计（loading/disabled/error）。”</li>
-                <li><span class="list-k">AUDIT</span> “告诉我视觉层级缺在哪里，并给修改计划。”</li>
-              </ul>
-              <div class="hint">默认不把 Web UI 搬进 iPhone；会显式做平台差异化。</div>
             </div>
           </div>
         </div>
@@ -183,7 +243,8 @@ npx skills add dickwu/apple-design-skill</code></pre>
 
       <section id="cases" class="section" aria-label="专业案例提示词（可复制）">
         <div class="container">
-          <div class="section-head">
+          <div class="section-head section-head-wide">
+            <div class="section-kicker">Copyable prompts</div>
             <h2 class="h2">专业 Cursor 案例（可复制）</h2>
             <p class="sub">从一句“页面普通/不够苹果风”开始，让总控先冻结输入，再路由到正确专家流程。</p>
           </div>
@@ -260,46 +321,23 @@ npx skills add dickwu/apple-design-skill</code></pre>
 
       <section id="router" class="section section-alt" aria-label="总控 Router">
         <div class="container">
-          <div class="section-head section-head-compact">
-            <h2 class="h2">总控 Router：为什么“像设计师”而不是“像 AI 模板”</h2>
+          <div class="section-head section-head-wide">
+            <div class="section-kicker">Router principle</div>
+            <h2 class="h2">总控 Router 的作用，不是替你选一个漂亮风格，而是替你先做设计判断。</h2>
             <p class="sub">
               你只需要表达“这个页面感觉普通/不够高级”，总控会先做设计情报卡，再路由到正确工作流，并把专家 Skill 的原则嵌入最后的实现建议与审查评分。
             </p>
           </div>
 
-          <div class="router-matrix" role="img" aria-label="Router 路由矩阵示意">
-            <div class="matrix-left">
-              <div class="matrix-title">工作流</div>
-              <div class="matrix-item matrix-item-main">NEW</div>
-              <div class="matrix-item">REDESIGN</div>
-              <div class="matrix-item">AUDIT</div>
-              <div class="matrix-item">FIX</div>
-              <div class="matrix-item">MATCH</div>
-            </div>
-
-            <div class="matrix-right">
-              <div class="matrix-title">平台</div>
-              <div class="matrix-chips">
-                <span class="chip chip-active">Web</span>
-                <span class="chip">iOS</span>
-                <span class="chip">macOS</span>
-                <span class="chip">Android</span>
-                <span class="chip">Flutter / RN</span>
-              </div>
-
-              <div class="matrix-callout">
-                <div class="callout-title">选择规则</div>
-                <div class="callout-body">
-                  最多加载 <strong>1 主 + 1 辅</strong> Skill，避免上下文爆炸；
-                  先 Design Intelligence 冻结输入，再进入 Art Direction → 实现 → 100 分 Audit + Gate。
-                </div>
-              </div>
+          <div class="router-quote">
+            <div class="router-quote-text">
+              一个真正能用的设计 Skill，不应该把所有产品做成同一种风格，而应该用同一套标准流程，做出不同产品各自该有的样子。
             </div>
           </div>
 
           <div class="footer-cta" aria-label="页脚行动区">
-            <div class="footer-cta-title">把“设计审美”变成可复用的工作流</div>
-            <div class="footer-cta-sub">从一句“页面不好看”开始，自动路由到正确的专家能力。</div>
+            <div class="footer-cta-title">把设计审美变成一套可复用、可审查、可迭代的工作流。</div>
+            <div class="footer-cta-sub">从一句“这个页面不好看”开始，到最后一轮审查结束，所有步骤都有纪律。</div>
             <div class="footer-actions">
               <a class="btn btn-primary" href="https://github.com/linux503/premium-ui-design-docs">查看仓库</a>
               <a class="btn btn-ghost" href="#content">回到顶部</a>
@@ -313,7 +351,7 @@ npx skills add dickwu/apple-design-skill</code></pre>
       <div class="container footer-inner">
         <div class="footer-left">
           <div class="footer-brand">premium-ui-design</div>
-          <div class="footer-small">Anti-AI Slop · Design Audit Gate · 不破坏业务逻辑</div>
+          <div class="footer-small">AI Product Design Director · Design Audit Gate · Anti-AI Slop</div>
         </div>
         <div class="footer-right">
           <a class="footer-link" href="https://github.com/linux503/premium-ui-design-docs/blob/main/INSTALL.md">INSTALL.md</a>
@@ -323,7 +361,6 @@ npx skills add dickwu/apple-design-skill</code></pre>
     </footer>
 
     <script>
-      // 轻量的“复制代码块”能力（可选，不影响阅读）
       document.querySelectorAll("pre.code").forEach((pre) => {
         const btn = document.createElement("button");
         btn.type = "button";
