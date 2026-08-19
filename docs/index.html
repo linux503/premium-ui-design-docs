@@ -17,104 +17,82 @@
         </div>
 
         <nav class="nav" aria-label="页面导航">
-          <a class="nav-link" href="#why">为什么存在</a>
-          <a class="nav-link" href="#flow">流程</a>
-          <a class="nav-link" href="#platforms">平台</a>
-          <a class="nav-link nav-link-muted" href="#quickstart">开始使用</a>
+          <a class="nav-link" href="#system">System</a>
+          <a class="nav-link" href="#audit">Audit</a>
+          <a class="nav-link" href="#quickstart">Use</a>
+          <a class="nav-link nav-link-muted" href="#cases">Cases</a>
         </nav>
       </div>
     </header>
 
     <main id="content">
       <section class="hero" aria-label="Hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <div class="eyebrow">AI Product Design Director · UI/UX · Design System · Design Review</div>
-            <h1 class="h1">让 Cursor 遇到设计任务时，不再“随手拼 UI”，而是先做判断，再做审美。</h1>
-            <p class="lead">
-              `premium-ui-design` 不是十几个 Skill 的目录页，而是一个总控 Router。它识别关键词、判断平台、
-              吸收全网设计 Skill 的方法论，然后按固定流程做出不模板化、真正适合当前产品的结果。
-            </p>
+        <div class="container hero-stack">
+          <div class="eyebrow">AI Product Design Director · UI/UX · Design System · Design Review</div>
+          <h1 class="h1">让 Cursor 在做设计时，先做判断，再做界面。</h1>
+          <p class="lead lead-hero">
+            `premium-ui-design` 不是一个会产出同一种风格的 UI Prompt。它是一个总控设计 Skill：识别关键词、
+            判断平台、冻结输入、建立 Art Direction、吸收外部 Skill 方法论，最后统一跑审查。
+          </p>
 
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#quickstart">开始使用</a>
-              <a class="btn btn-ghost" href="#cases">看案例提示词</a>
-              <a class="btn btn-ghost" href="https://github.com/linux503/premium-ui-design-docs">查看 GitHub</a>
-            </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quickstart">开始使用</a>
+            <a class="btn btn-ghost" href="#cases">看案例</a>
+            <a class="btn btn-ghost" href="https://github.com/linux503/premium-ui-design-docs">GitHub</a>
           </div>
 
-          <div class="hero-aside">
-            <div class="hero-aside-title">流程统一，但结果不能同质化。</div>
-            <ul class="hero-principles">
-              <li>先 Design Intelligence，不直接写 UI</li>
-              <li>按平台走固定判断链路，而不是一套风格到处复用</li>
-              <li>最后统一跑 10 维 Design Audit，并审查 AI 模板味</li>
-            </ul>
-            <div class="hero-caption">你要的不是“更漂亮一点”，而是更像真正上线的产品。</div>
+          <div class="hero-statement">
+            <div class="hero-statement-line">流程统一。</div>
+            <div class="hero-statement-line">结果不能同质化。</div>
+            <div class="hero-statement-line hero-statement-line-muted">每个产品都应该有自己的判断与辨识度。</div>
           </div>
         </div>
       </section>
 
-      <section id="why" class="section section-tight" aria-label="为什么存在">
+      <section id="system" class="section" aria-label="System">
         <div class="container">
-          <div class="split-head">
-            <div class="split-kicker">Why this exists</div>
-            <div class="split-copy">
-              <h2 class="h2">大多数 AI 做 UI 的问题，不是不会写代码，而是根本没先做设计判断。</h2>
-              <p class="sub">
-                所以这个 Skill 的目标不是“多产出几个页面”，而是把设计流程标准化：识别任务、判断平台、
-                冻结输入、建立 Art Direction、执行平台逻辑、最后统一审查。这样输出才不会一眼就是模板。
-              </p>
+          <div class="system-head">
+            <div class="section-kicker">Design operating system</div>
+            <h2 class="h2">它把“做设计”这件事拆开，而不是把所有页面做成同一个模板。</h2>
+          </div>
+
+          <div class="system-grid">
+            <div class="system-column">
+              <div class="system-title">Flow</div>
+              <ol class="system-list">
+                <li>Trigger</li>
+                <li>Judge</li>
+                <li>Design Intelligence</li>
+                <li>Art Direction</li>
+                <li>Build</li>
+                <li>Audit</li>
+              </ol>
+            </div>
+            <div class="system-column">
+              <div class="system-title">Platform logic</div>
+              <div class="system-copy">
+                Web、iOS / macOS、Android、Flutter / React Native 都走不同链路，而不是一套通用 UI 到处复用。
+              </div>
+            </div>
+            <div class="system-column system-column-wide">
+              <div class="system-title">Structure</div>
+              <pre class="arch-code"><code>premium-ui-design/
+├── SKILL.md
+├── core/skill-router.md
+├── docs/design-intelligence.md
+├── docs/anti-ai-slop.md
+├── docs/design-audit.md
+└── references/skill-registry.md</code></pre>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="flow" class="section" aria-label="流程">
-        <div class="container">
-          <div class="section-head section-head-wide">
-            <div class="section-kicker">Standardized flow</div>
-            <h2 class="h2">固定流程，不固定结果。</h2>
-            <p class="sub">
-              每次都按同一套流程执行，但最终视觉必须随着产品类型、品牌气质、平台约束与信息密度发生变化。
-            </p>
-          </div>
-
-          <div class="flowline">
-            <div class="flow-step">
-              <div class="flow-index">01</div>
-              <div class="flow-title">Trigger</div>
-              <div class="flow-body">遇到 `优化UI / redesign / 美化 / SwiftUI / iOS / Landing Page / Dashboard` 等关键词自动触发。</div>
-            </div>
-            <div class="flow-step">
-              <div class="flow-index">02</div>
-              <div class="flow-title">Judge</div>
-              <div class="flow-body">判断是 NEW / REDESIGN / AUDIT / FIX / MATCH，并锁定平台与产品类型。</div>
-            </div>
-            <div class="flow-step">
-              <div class="flow-index">03</div>
-              <div class="flow-title">Direct</div>
-              <div class="flow-body">先写 Design Intelligence 与 Art Direction，不允许直接上 UI 代码。</div>
-            </div>
-            <div class="flow-step">
-              <div class="flow-index">04</div>
-              <div class="flow-title">Build</div>
-              <div class="flow-body">按平台链路吸收外部 Skill 方法论，构建设计系统、组件与状态。</div>
-            </div>
-            <div class="flow-step">
-              <div class="flow-index">05</div>
-              <div class="flow-title">Audit</div>
-              <div class="flow-body">统一跑 10 维 Design Audit，严重 AI 模板味一票否决。</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="platforms" class="section section-platforms" aria-label="平台 intelligence">
+      <section class="section section-platforms" aria-label="Platform intelligence">
         <div class="container">
           <div class="section-head section-head-wide">
             <div class="section-kicker">Platform intelligence</div>
-            <h2 class="h2">不同平台，走不同判断链路。</h2>
+            <h2 class="h2">不同平台，应该默认做不同判断。</h2>
           </div>
 
           <div class="platform-layout">
@@ -151,7 +129,7 @@
               <div class="platform-label">Flutter / React Native</div>
               <div class="platform-chain">
                 <span>Mobile UI</span>
-                <span>iOS / Android 平台差异</span>
+                <span>iOS / Android 差异</span>
                 <span>Adaptive Design</span>
               </div>
             </div>
@@ -159,7 +137,7 @@
         </div>
       </section>
 
-      <section class="section section-audit" aria-label="Design Audit">
+      <section id="audit" class="section section-audit" aria-label="Design Audit">
         <div class="container">
           <div class="section-head section-head-wide">
             <div class="section-kicker">Unified review</div>
@@ -179,9 +157,7 @@
             <div class="audit-item audit-item-warn">AI模板味</div>
           </div>
 
-          <div class="audit-note">
-            分数高不等于可以结束。只要 <strong>AI模板味</strong> 严重命中，就必须继续优化。
-          </div>
+          <div class="audit-note">分数高不等于可以结束。只要 <strong>AI模板味</strong> 严重命中，就必须继续优化。</div>
         </div>
       </section>
 
@@ -189,47 +165,25 @@
         <div class="container">
           <div class="section-head section-head-wide">
             <div class="section-kicker">Skill architecture</div>
-            <h2 class="h2">它不是一句 Prompt，而是一套被拆开的、可维护的设计操作系统。</h2>
-            <p class="sub">
-              参考全网 Skill 的方法论后，最终落到一个可维护的结构里：入口、Router、审查标准、案例提示词、
-              以及平台判断逻辑彼此独立，但又被总控统一调度。
-            </p>
+            <h2 class="h2">结构感不是装饰，它是这个 Skill 真正能持续工作的原因。</h2>
           </div>
 
-          <div class="arch-shell">
-            <div class="arch-tree">
-              <div class="arch-tree-head">premium-ui-design/</div>
-              <pre class="arch-code"><code>premium-ui-design/
-├── SKILL.md
-├── core/
-│   └── skill-router.md
-├── docs/
-│   ├── design-intelligence.md
-│   ├── anti-ai-slop.md
-│   └── design-audit.md
-├── references/
-│   └── skill-registry.md
-└── prompts/
-    └── cursor.md</code></pre>
+          <div class="arch-grid arch-grid-simple">
+            <div class="arch-block">
+              <div class="arch-title">SKILL.md</div>
+              <div class="arch-body">定义触发词、工作流、平台判断、统一纪律。</div>
             </div>
-
-            <div class="arch-grid">
-              <div class="arch-block">
-                <div class="arch-title">SKILL.md</div>
-                <div class="arch-body">主入口。负责触发词、工作流、平台判断、核心纪律与最终执行原则。</div>
-              </div>
-              <div class="arch-block">
-                <div class="arch-title">core/skill-router.md</div>
-                <div class="arch-body">把 Web、iOS / macOS、Android、Flutter / React Native 的链路固定下来。</div>
-              </div>
-              <div class="arch-block">
-                <div class="arch-title">docs/design-audit.md</div>
-                <div class="arch-body">统一 10 维 Design Audit，确保最后不是“好像差不多”就结束。</div>
-              </div>
-              <div class="arch-block">
-                <div class="arch-title">references/skill-registry.md</div>
-                <div class="arch-body">外部专家 Skill 来源清单。不是堆砌，而是按需吸收。</div>
-              </div>
+            <div class="arch-block">
+              <div class="arch-title">skill-router.md</div>
+              <div class="arch-body">把不同平台的判断链路固定下来，避免每次乱跳。</div>
+            </div>
+            <div class="arch-block">
+              <div class="arch-title">design-audit.md</div>
+              <div class="arch-body">规定最后必须怎么审查，而不是“差不多就行”。</div>
+            </div>
+            <div class="arch-block">
+              <div class="arch-title">skill-registry.md</div>
+              <div class="arch-body">吸收外部 Skill 方法论，但不把首页做成列表目录。</div>
             </div>
           </div>
         </div>
@@ -272,7 +226,7 @@
           <div class="split-head split-head-install">
             <div class="split-kicker">Optional expert skills</div>
             <div class="split-copy">
-              <h2 class="h2">外部 Skill 是专家来源，但最终应该被总控吸收，而不是各自为战。</h2>
+              <h2 class="h2">外部 Skill 是方法论来源，不应该把官网做成插件商店。</h2>
             </div>
           </div>
 
